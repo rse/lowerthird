@@ -17,7 +17,9 @@ their name and role.
 [Animated Lower Thirds with Dockable Control Panel](https://obsproject.com/forum/resources/animated-lower-thirds-with-dockable-control-panel.1057/),
 but **LowerThird** allows to explicitly specify the scene id from its Browser Source
 which allows one to arbitrary jump between scenes and still have the correct
-lower thirds being displayed.
+lower thirds being displayed. Additionally, **LowerThirds** can display an
+arbitrary amount of lower thirds per scene (not just 4) and allows
+an arbitrary number of scenes (not just 10).
 
 ![LowerThird screenshot](screenshot.png)
 
