@@ -1,6 +1,6 @@
 {
     "name":                 "lowerthird",
-    "version":              "0.9.0",
+    "version":              "0.9.1",
     "description":          "Lower Thirds for OBS Studio",
     "main":                 "index.html",
     "keywords":             [ "lower", "third", "obs", "studio" ],
