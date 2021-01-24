@@ -1,18 +1,18 @@
 {
-    "name":                  "lowerthird",
-    "version":               "0.9.0",
-    "description":           "Lower Thirds for OBS Studio",
-    "main":                  "index.html",
-    "keywords":              [ "lower", "third", "obs", "studio" ],
-    "private":               true,
+    "name":                 "lowerthird",
+    "version":              "0.9.0",
+    "description":          "Lower Thirds for OBS Studio",
+    "main":                 "index.html",
+    "keywords":             [ "lower", "third", "obs", "studio" ],
+    "private":              true,
     "repository": {
-        "type":              "git",
-        "url":               "https://github.com/rse/lowerthird.git"
+        "type":             "git",
+        "url":              "https://github.com/rse/lowerthird.git"
     },
     "author": {
-        "name":              "Dr. Ralf S. Engelschall",
-        "email":             "rse@engelschall.com",
-        "url":               "http://engelschall.com"
+        "name":             "Dr. Ralf S. Engelschall",
+        "email":            "rse@engelschall.com",
+        "url":              "http://engelschall.com"
     },
     "license":              "MIT",
     "homepage":             "https://github.com/rse/lowerthird",
