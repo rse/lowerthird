@@ -155,8 +155,8 @@ $(document).ready(() => {
             duration:  def.timeAnimation1,
             easing:    "easeOutSine",
             ...(yd === "t" ?
-                { top: [ - (2 + def.line1Height + def.line2Height + 4), 0 ] } :
-                { top: [    2 + def.line1Height + def.line2Height + 4,  0 ] })
+                { top: [ - (1 + 2 + def.line1Height + def.line2Height + 4), 0 ] } :
+                { top: [    1 + 2 + def.line1Height + def.line2Height + 4,  0 ] })
         })
 
         /*  coming: line 1  */
@@ -206,8 +206,8 @@ $(document).ready(() => {
             duration:  def.timeAnimation1,
             easing:    "easeInSine",
             ...(yd === "t" ?
-                { top: [ 0, - (2 + def.line1Height + def.line2Height + 4) ] } :
-                { top: [ 0,    2 + def.line1Height + def.line2Height + 4  ] })
+                { top: [ 0, - (1 + 2 + def.line1Height + def.line2Height + 4) ] } :
+                { top: [ 0,    1 + 2 + def.line1Height + def.line2Height + 4  ] })
         })
     }
 })
