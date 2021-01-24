@@ -15,7 +15,7 @@ defaults:
     barShadow:         "#000000"
     line1Height:       30
     line1Color1:       "#000000"
-    line1Color2:       "#303030"
+    line1Color2:       "#000000"
     line1Shadow1:      transparent
     line1Shadow2:      transparent
     line1FontWeight1:  "300"
