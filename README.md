@@ -9,7 +9,7 @@ Abstract
 
 **LowerThird** is a plain HTML/CSS/JS Browser Source layer for
 [OBS Studio](http://obsproject.com/) for displaying one or more
-[lower thirds](https://en.wikipedia.org/wiki/Lower_third) as an overlay in a
+[lower thirds](https://en.wikipedia.org/wiki/Lower_third) as an animated overlay in a
 video broadcasting scene. This is usually used to annotate persons with
 their name and role.
 
