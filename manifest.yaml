@@ -22,7 +22,6 @@ defaults:
     line1FontWeight2:  "600"
     line1FontStyle1:   "normal"
     line1FontStyle2:   "normal"
-    line2Width:        700
     line2Height:       20
     line2Color:        "#606060"
     line2Shadow:       transparent
