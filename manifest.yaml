@@ -14,10 +14,14 @@ defaults:
     barColor2:         "#932737"
     barShadow:         "#000000"
     line1Height:       30
-    line1Color:        "#000000"
-    line1Shadow:       transparent
-    line1FontWeight:   "300"
-    line1FontStyle:    "normal"
+    line1Color1:       "#000000"
+    line1Color2:       "#303030"
+    line1Shadow1:      transparent
+    line1Shadow2:      transparent
+    line1FontWeight1:  "300"
+    line1FontWeight2:  "600"
+    line1FontStyle1:   "normal"
+    line1FontStyle2:   "normal"
     line2Width:        700
     line2Height:       20
     line2Color:        "#606060"
@@ -32,15 +36,18 @@ defaults:
 scenes:
     -   id: "01"
         lowerThirds:
-            -   line1Text:   "Dr. John Doe"
+            -   line1Text1:  "Dr. John"
+                line1Text2:  "Doe"
                 line2Text:   "CEO Doe Industries"
                 boxHandle:   "br"
                 boxPosition: [ -100, -100 ]
-            -   line1Text:   "Mr. Foo Bar"
+            -   line1Text1:  "Mr. Foo"
+                line1Text2:  "Bar"
                 line2Text:   "Director Doe Research"
                 boxHandle:   "tl"
                 boxPosition: [ 100, 100 ]
-            -   line1Text:   "Mrs. Baz Quux"
+            -   line1Text1:  "Mrs. Baz"
+                line1Text2:  "Quux"
                 line2Text:   "Teamleader Enterprise & Enabling, Doe Research"
                 boxHandle:   "bl"
                 boxPosition: [ 100, -100 ]

@@ -68,6 +68,10 @@ body {
     padding-right: 15px;
     padding-top: 2px;
 }
+.lowerthird .content .line1 .firstname {
+}
+.lowerthird .content .line1 .surname {
+}
 .lowerthird .content .line2 {
     position: relative;
     padding-left:  15px;

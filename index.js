@@ -44,33 +44,25 @@ $(document).ready(() => {
         const def = Object.assign({}, MANIFEST.defaults, lowerthird)
 
         /*  render DOM fragment  */
-        let el
-        if (def.boxHandle.match(/^[tb]l$/)) {
-            el = $(`
-                <div class="lowerthird lowerthird-${def.boxHandle}">
-                    <div class="door">
-                        <div class="bar"></div>
-                    </div>
-                    <div class="content">
-                        <div class="line1">${def.line1Text.toUpperCase()}</div>
-                        <div class="line2">${def.line2Text}</div>
-                    </div>
+        const fragmentDoor =
+            `<div class="door">
+                <div class="bar"></div>
+            </div>`
+        const fragmentContent =
+            `<div class="content">
+                <div class="line1">
+                    <span class="firstname">${def.line1Text1.toUpperCase()}</span>
+                    <span class="surname">${def.line1Text2.toUpperCase()}</span>
                 </div>
-            `)
-        }
-        else {
-            el = $(`
-                <div class="lowerthird lowerthird-${def.boxHandle}">
-                    <div class="content">
-                        <div class="line1">${def.line1Text.toUpperCase()}</div>
-                        <div class="line2">${def.line2Text}</div>
-                    </div>
-                    <div class="door">
-                        <div class="bar"></div>
-                    </div>
-                </div>
-            `)
-        }
+                <div class="line2">${def.line2Text}</div>
+            </div>`
+        const fragment =
+            `<div class="lowerthird lowerthird-${def.boxHandle}">
+                ${def.boxHandle.match(/^[tb]l$/) ?
+                (fragmentDoor + fragmentContent) :
+                (fragmentContent + fragmentDoor)}
+            </div>`
+        const el = $(fragment)
 
         /*  style DOM fragement  */
         $(el)
@@ -90,13 +82,21 @@ $(document).ready(() => {
             .css("background-color", def.boxBackground)
             .css("width", `${def.boxWidth - 30 - 6}px`)
             .css("height", `${def.line1Height}px`)
-            .css("color", def.line1Color)
-            .css("font-weight", def.line1FontWeight)
-            .css("font-style",  def.line1FontStyle)
             .css("font-size", `${def.line1Height * 0.75}px`)
-        if (def.line1Shadow !== "transparent")
-            $(".line1", el)
-                .css("text-shadow", `0px 0px 1px ${def.line1Shadow}`)
+        $(".line1 .firstname", el)
+            .css("color", def.line1Color1)
+            .css("font-style",  def.line1FontStyle1)
+            .css("font-weight", def.line1FontWeight1)
+        $(".line1 .surname", el)
+            .css("color", def.line1Color2)
+            .css("font-style",  def.line1FontStyle2)
+            .css("font-weight", def.line1FontWeight2)
+        if (def.line1Shadow1 !== "transparent")
+            $(".line1 .firstname", el)
+                .css("text-shadow", `0px 0px 1px ${def.line1Shadow1}`)
+        if (def.line1Shadow2 !== "transparent")
+            $(".line1 .surname", el)
+                .css("text-shadow", `0px 0px 1px ${def.line1Shadow2}`)
         $(".line2", el)
             .css("background-color", def.boxBackground)
             .css("width", `${def.boxWidth - 30 - 6}px`)
