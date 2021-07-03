@@ -64,7 +64,7 @@ $(document).ready(() => {
             </div>`
         const el = $(fragment)
 
-        /*  style DOM fragement  */
+        /*  style DOM fragment  */
         $(el)
             .css("width",            `${6 + 15 + def.boxWidth + 15}px`)
             .css("height",           `${def.line1Height + def.line2Height + 2 + 4}px`)
