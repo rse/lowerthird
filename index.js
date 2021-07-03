@@ -54,7 +54,10 @@ $(document).ready(() => {
                     <span class="text1">${def.line1Text1}</span>
                     <span class="text2">${def.line1Text2}</span>
                 </div>
-                <div class="line2">${def.line2Text}</div>
+                <div class="line2">
+                    <span class="text1">${def.line2Text1}</span>
+                    <span class="text2">${def.line2Text2}</span>
+                </div>
             </div>`
         const fragment =
             `<div class="lowerthird lowerthird-${def.boxHandle}">
@@ -85,14 +88,14 @@ $(document).ready(() => {
             .css("font-family",      def.line1FontFamily1)
             .css("font-style",       def.line1FontStyle1)
             .css("font-weight",      def.line1FontWeight1)
+        if (def.line1Shadow1 !== "transparent")
+            $(".line1 .text1", el)
+                .css("text-shadow",  `0px 0px 1px ${def.line1Shadow1}`)
         $(".line1 .text2", el)
             .css("color",            def.line1Color2)
             .css("font-family",      def.line1FontFamily2)
             .css("font-style",       def.line1FontStyle2)
             .css("font-weight",      def.line1FontWeight2)
-        if (def.line1Shadow1 !== "transparent")
-            $(".line1 .text1", el)
-                .css("text-shadow",  `0px 0px 1px ${def.line1Shadow1}`)
         if (def.line1Shadow2 !== "transparent")
             $(".line1 .text2", el)
                 .css("text-shadow",  `0px 0px 1px ${def.line1Shadow2}`)
@@ -100,14 +103,23 @@ $(document).ready(() => {
             .css("background-color", def.boxBackground)
             .css("width",            `${def.boxWidth - 30 - 6}px`)
             .css("height",           `${def.line2Height}px`)
-            .css("color",            def.line2Color)
-            .css("font-family",      def.line2FontFamily)
-            .css("font-weight",      def.line2FontWeight)
-            .css("font-style",       def.line2FontStyle)
             .css("font-size",        `${def.line2Height * 0.75}px`)
-        if (def.line1Shadow !== "transparent")
-            $(".line2", el)
-                .css("text-shadow",  `0px 0px 1px ${def.line2Shadow}`)
+        $(".line2 .text1", el)
+            .css("color",            def.line2Color1)
+            .css("font-family",      def.line2FontFamily1)
+            .css("font-style",       def.line2FontStyle1)
+            .css("font-weight",      def.line2FontWeight1)
+        if (def.line2Shadow1 !== "transparent")
+            $(".line2 .text1", el)
+                .css("text-shadow",  `0px 0px 1px ${def.line2Shadow1}`)
+        $(".line2 .text2", el)
+            .css("color",            def.line2Color2)
+            .css("font-family",      def.line2FontFamily2)
+            .css("font-style",       def.line2FontStyle2)
+            .css("font-weight",      def.line2FontWeight2)
+        if (def.line2Shadow2 !== "transparent")
+            $(".line2 .text2", el)
+                .css("text-shadow",  `0px 0px 1px ${def.line2Shadow2}`)
 
         /*  position DOM fragment  */
         const [ , yd, xd ] = def.boxHandle.match(/^([tb])([lr])$/)

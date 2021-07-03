@@ -16,26 +16,36 @@ defaults:
     barColor2:         "#932737"                 # accent bar color 2 (at bottom, for linear gradient)
 
     line1Height:       30                        # height (in pixels) of line 1
+
     line1Text1:        ""                        # text               of line 1, text 1 (left)
-    line1Text2:        ""                        # text               of line 1, text 2 (right)
     line1Color1:       "#606060"                 # text color         of line 1, text 1 (left)
-    line1Color2:       "#000000"                 # text color         of line 1, text 2 (right)
     line1Shadow1:      transparent               # text shadow        of line 1, text 1 (left)
-    line1Shadow2:      transparent               # text shadow        of line 1, text 2 (right)
     line1FontFamily1:  "TypoPRO Source Sans Pro" # text font family   of line 1, text 1 (left)
-    line1FontFamily2:  "TypoPRO Source Sans Pro" # text font family   of line 1, text 2 (right)
     line1FontWeight1:  "300"                     # text font weight   of line 1, text 1 (left)
-    line1FontWeight2:  "600"                     # text font weight   of line 1, text 2 (right)
     line1FontStyle1:   "normal"                  # text font style    of line 1, text 1 (left)
+
+    line1Text2:        ""                        # text               of line 1, text 2 (right)
+    line1Color2:       "#000000"                 # text color         of line 1, text 2 (right)
+    line1Shadow2:      transparent               # text shadow        of line 1, text 2 (right)
+    line1FontFamily2:  "TypoPRO Source Sans Pro" # text font family   of line 1, text 2 (right)
+    line1FontWeight2:  "600"                     # text font weight   of line 1, text 2 (right)
     line1FontStyle2:   "normal"                  # text font style    of line 1, text 2 (right)
 
     line2Height:       20                        # height (in pixels) of line 2
-    line2Text:         ""                        # text               of line 2
-    line2Color:        "#606060"                 # text color         of line 2
-    line2Shadow:       transparent               # text shadow        of line 2
-    line2FontFamily:   "TypoPRO Source Sans Pro" # text font family   of line 2
-    line2FontWeight:   "400"                     # text font weight   of line 2
-    line2FontStyle:    "normal"                  # text font style    of line 2
+
+    line2Text1:        ""                        # text               of line 2, text 1 (left)
+    line2Color1:       "#606060"                 # text color         of line 2, text 1 (left)
+    line2Shadow1:      transparent               # text shadow        of line 2, text 1 (left)
+    line2FontFamily1:  "TypoPRO Source Sans Pro" # text font family   of line 2, text 1 (left)
+    line2FontWeight1:  "400"                     # text font weight   of line 2, text 1 (left)
+    line2FontStyle1:   "normal"                  # text font style    of line 2, text 1 (left)
+
+    line2Text2:        ""                        # text               of line 2, text 2 (right)
+    line2Color2:       "#606060"                 # text color         of line 2, text 2 (right)
+    line2Shadow2:      transparent               # text shadow        of line 2, text 2 (right)
+    line2FontFamily2:  "TypoPRO Source Sans Pro" # text font family   of line 2, text 2 (right)
+    line2FontWeight2:  "700"                     # text font weight   of line 2, text 2 (right)
+    line2FontStyle2:   "normal"                  # text font style    of line 2, text 2 (right)
 
     timeDelay:         1000                      # time (in ms) for initially waiting (before coming)
     timeAnimation1:    250                       # time (in ms) of bar  animation     (coming and going)
@@ -47,17 +57,17 @@ scenes:
         lowerThirds:
             -   line1Text1:  "Dr. John"
                 line1Text2:  "Doe"
-                line2Text:   "CEO Doe Industries"
+                line2Text1:  "CEO Doe Industries"
                 boxHandle:   "br"
                 boxPosition: [ -100, -100 ]
             -   line1Text1:  "Mr. Foo"
                 line1Text2:  "Bar"
-                line2Text:   "Director Doe Research"
+                line2Text1:  "Director Doe Research"
                 boxHandle:   "tl"
                 boxPosition: [ 100, 100 ]
             -   line1Text1:  "Mrs. Baz"
                 line1Text2:  "Quux"
-                line2Text:   "Teamleader Enterprise & Enabling, Doe Research"
+                line2Text1:  "Teamleader Enterprise & Enabling, Doe Research"
                 boxHandle:   "bl"
                 boxPosition: [ 100, -100 ]
 
