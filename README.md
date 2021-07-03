@@ -35,7 +35,7 @@ Usage
 3. Download all dependencies:<br/>
    `$ npm install`
 
-4. Edit your lower thirds in the manifest:<br/>
+4. Edit your lower thirds in the [manifest](manifest.yaml):<br/>
    `$ vi manifest.yaml`
 
 5. Convert the manifest for loading into the Browser Source:<br/>
