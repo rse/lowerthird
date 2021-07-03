@@ -51,8 +51,8 @@ $(document).ready(() => {
         const fragmentContent =
             `<div class="content">
                 <div class="line1">
-                    <span class="firstname">${def.line1Text1.toUpperCase()}</span>
-                    <span class="surname">${def.line1Text2.toUpperCase()}</span>
+                    <span class="text1">${def.line1Text1}</span>
+                    <span class="text2">${def.line1Text2}</span>
                 </div>
                 <div class="line2">${def.line2Text}</div>
             </div>`
@@ -80,25 +80,28 @@ $(document).ready(() => {
             .css("width",            `${def.boxWidth - 30 - 6}px`)
             .css("height",           `${def.line1Height}px`)
             .css("font-size",        `${def.line1Height * 0.75}px`)
-        $(".line1 .firstname", el)
+        $(".line1 .text1", el)
             .css("color",            def.line1Color1)
+            .css("font-family",      def.line1FontFamily1)
             .css("font-style",       def.line1FontStyle1)
             .css("font-weight",      def.line1FontWeight1)
-        $(".line1 .surname", el)
+        $(".line1 .text2", el)
             .css("color",            def.line1Color2)
+            .css("font-family",      def.line1FontFamily2)
             .css("font-style",       def.line1FontStyle2)
             .css("font-weight",      def.line1FontWeight2)
         if (def.line1Shadow1 !== "transparent")
-            $(".line1 .firstname", el)
+            $(".line1 .text1", el)
                 .css("text-shadow",  `0px 0px 1px ${def.line1Shadow1}`)
         if (def.line1Shadow2 !== "transparent")
-            $(".line1 .surname", el)
+            $(".line1 .text2", el)
                 .css("text-shadow",  `0px 0px 1px ${def.line1Shadow2}`)
         $(".line2", el)
             .css("background-color", def.boxBackground)
             .css("width",            `${def.boxWidth - 30 - 6}px`)
             .css("height",           `${def.line2Height}px`)
             .css("color",            def.line2Color)
+            .css("font-family",      def.line2FontFamily)
             .css("font-weight",      def.line2FontWeight)
             .css("font-style",       def.line2FontStyle)
             .css("font-size",        `${def.line2Height * 0.75}px`)

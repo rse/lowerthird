@@ -4,40 +4,43 @@
 
 defaults:
 
-    canvasWidth:       1280             # width  (in pixels) of the canvas this LT is embedded into
-    canvasHeight:      720              # height (in pixels) of the canvas this LT is embedded into
+    canvasWidth:       1280                      # width  (in pixels) of the canvas this LT is embedded into
+    canvasHeight:      720                       # height (in pixels) of the canvas this LT is embedded into
 
-    boxHandle:         "bl"             # where the LT box handle is (tl=top-left, tr=top-right, bl=bottom-left, br=bottom-right)
-    boxPosition:       [ 100, 100 ]     # where the LT box handle is positioned on the canvas
-    boxWidth:          350              # width (in pixels) of the box
-    boxBackground:     "#f0f0f0e0"      # background color (in RGBA) of the box
+    boxHandle:         "bl"                      # where the LT box handle is (tl=top-left, tr=top-right, bl=bottom-left, br=bottom-right)
+    boxPosition:       [ 100, 100 ]              # where the LT box handle is positioned on the canvas
+    boxWidth:          350                       # width (in pixels) of the box
+    boxBackground:     "#f0f0f0e0"               # background color (in RGBA) of the box
 
-    barColor1:         "#b34745"        # accent bar color 1 (at top, for linear gradient)
-    barColor2:         "#932737"        # accent bar color 2 (at bottom, for linear gradient)
+    barColor1:         "#b34745"                 # accent bar color 1 (at top, for linear gradient)
+    barColor2:         "#932737"                 # accent bar color 2 (at bottom, for linear gradient)
 
-    line1Height:       30               # height (in pixels) of line 1
-    line1Text1:        ""               # text               of line 1, text 1 (left)
-    line1Text2:        ""               # text               of line 1, text 2 (right)
-    line1Color1:       "#606060"        # text color         of line 1, text 1 (left)
-    line1Color2:       "#000000"        # text color         of line 1, text 2 (right)
-    line1Shadow1:      transparent      # text shadow        of line 1, text 1 (left)
-    line1Shadow2:      transparent      # text shadow        of line 1, text 2 (right)
-    line1FontWeight1:  "300"            # text font weight   of line 1, text 1 (left)
-    line1FontWeight2:  "600"            # text font weight   of line 1, text 2 (right)
-    line1FontStyle1:   "normal"         # text font style    of line 1, text 1 (left)
-    line1FontStyle2:   "normal"         # text font style    of line 1, text 2 (right)
+    line1Height:       30                        # height (in pixels) of line 1
+    line1Text1:        ""                        # text               of line 1, text 1 (left)
+    line1Text2:        ""                        # text               of line 1, text 2 (right)
+    line1Color1:       "#606060"                 # text color         of line 1, text 1 (left)
+    line1Color2:       "#000000"                 # text color         of line 1, text 2 (right)
+    line1Shadow1:      transparent               # text shadow        of line 1, text 1 (left)
+    line1Shadow2:      transparent               # text shadow        of line 1, text 2 (right)
+    line1FontFamily1:  "TypoPRO Source Sans Pro" # text font family   of line 1, text 1 (left)
+    line1FontFamily2:  "TypoPRO Source Sans Pro" # text font family   of line 1, text 2 (right)
+    line1FontWeight1:  "300"                     # text font weight   of line 1, text 1 (left)
+    line1FontWeight2:  "600"                     # text font weight   of line 1, text 2 (right)
+    line1FontStyle1:   "normal"                  # text font style    of line 1, text 1 (left)
+    line1FontStyle2:   "normal"                  # text font style    of line 1, text 2 (right)
 
-    line2Height:       20               # height (in pixels) of line 2
-    line2Text:         ""               # text               of line 2
-    line2Color:        "#606060"        # text color         of line 2
-    line2Shadow:       transparent      # text shadow        of line 2
-    line2FontWeight:   "400"            # text font weight   of line 2
-    line2FontStyle:    "normal"         # text font style    of line 2
+    line2Height:       20                        # height (in pixels) of line 2
+    line2Text:         ""                        # text               of line 2
+    line2Color:        "#606060"                 # text color         of line 2
+    line2Shadow:       transparent               # text shadow        of line 2
+    line2FontFamily:   "TypoPRO Source Sans Pro" # text font family   of line 2
+    line2FontWeight:   "400"                     # text font weight   of line 2
+    line2FontStyle:    "normal"                  # text font style    of line 2
 
-    timeDelay:         1000             # time (in ms) for initially waiting (before coming)
-    timeAnimation1:    250              # time (in ms) of bar  animation     (coming and going)
-    timeAnimation2:    1500             # time (in ms) of line animation     (coming and going)
-    timeDuration:      8000             # time (in ms) for keeping           (before going)
+    timeDelay:         1000                      # time (in ms) for initially waiting (before coming)
+    timeAnimation1:    250                       # time (in ms) of bar  animation     (coming and going)
+    timeAnimation2:    1500                      # time (in ms) of line animation     (coming and going)
+    timeDuration:      8000                      # time (in ms) for keeping           (before going)
 
 scenes:
     -   id: "01"
