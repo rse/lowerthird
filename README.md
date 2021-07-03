@@ -41,7 +41,10 @@ Usage
 5. Convert the manifest for loading into the Browser Source:<br/>
    `$ npm run convert`
 
-6. Add your Browser Source to your scenes:
+6. Test-Drive in regular Browser
+   `$ open index.html?scene=`*id*
+
+7. Finally, add your Browser Source to your scenes:
 
    - Local File: **(disabled)**
    - URL: *local-path*`/lowerthird/index.html?scene=`*id*
