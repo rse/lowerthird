@@ -1,5 +1,5 @@
 ##
-##  index.yaml -- Lower Thirds Configuration
+##  manifest.yaml -- Lower Thirds Configuration
 ##
 
 defaults:
@@ -18,8 +18,8 @@ defaults:
     line1Height:       30               # height (in pixels) of line 1
     line1Text1:        ""               # text               of line 1, text 1 (left)
     line1Text2:        ""               # text               of line 1, text 2 (right)
-    line1Color1:       "#000000"        # text color         of line 1, text 1 (left)
-    line1Color2:       "#ff0000"        # text color         of line 1, text 2 (right)
+    line1Color1:       "#606060"        # text color         of line 1, text 1 (left)
+    line1Color2:       "#000000"        # text color         of line 1, text 2 (right)
     line1Shadow1:      transparent      # text shadow        of line 1, text 1 (left)
     line1Shadow2:      transparent      # text shadow        of line 1, text 2 (right)
     line1FontWeight1:  "300"            # text font weight   of line 1, text 1 (left)
