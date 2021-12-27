@@ -21,7 +21,7 @@
         "jquery":           "3.6.0",
         "js-yaml":          "4.1.0",
         "animejs":          "3.2.1",
-        "typopro-web":      "4.2.5"
+        "typopro-web":      "4.2.6"
     },
     "scripts": {
         "convert":          "node convert.js"
